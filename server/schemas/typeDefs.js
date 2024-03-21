@@ -23,7 +23,6 @@ type Product {
 type Order {
     _id: ID
     totalPrice: Float
-    orderDate: String
     pointsRewarded: Int
     products: [Product]
 }
@@ -54,7 +53,6 @@ input ProductInput {
 
 input OrderInput {
     totalPrice: Float
-    orderDate: String
     pointsRewarded: Int
     products: [ID]
 }

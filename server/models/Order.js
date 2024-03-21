@@ -1,14 +1,9 @@
-const mongoose = require('mongoose')
-const {Schema} = mongoose
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
-
-const orderSchema = new Schema ({
+const orderSchema = new Schema({
     totalPrice: {
         type: Number,
-        required: true
-    },
-    orderDate: {
-        type: String,
         required: true
     },
     pointsRewarded: {
@@ -20,7 +15,18 @@ const orderSchema = new Schema ({
         ref: 'Product',
         required: true
     }]
-})
+});
 
-const Order = mongoose.model('Order', orderSchema)
-module.exports = Order
+
+orderSchema.pre('save', async function(next) {
+   
+    this.totalPrice = this.products.reduce((total, product) => total + product.productPrice, 0);
+
+   
+    this.pointsRewarded = Math.ceil(this.totalPrice);
+
+    next();
+});
+
+const Order = mongoose.model('Order', orderSchema);
+module.exports = Order;
