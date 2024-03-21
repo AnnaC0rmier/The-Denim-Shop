@@ -8,18 +8,18 @@ const orderSchema = new Schema ({
         required: true
     },
     orderDate: {
-        type: Date(),
+        type: String,
         required: true
     },
     pointsRewarded: {
         type: Number,
         required: true
     },
-    products: {
+    products: [{
         type: Schema.Types.ObjectId,
         ref: 'Product',
         required: true
-    }
+    }]
 })
 
 const Order = mongoose.model('Order', orderSchema)

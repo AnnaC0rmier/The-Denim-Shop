@@ -7,6 +7,9 @@ const productSchema = new Schema({
         type: String,
         required: true,
     },
+    productSize: [{
+        type: String,
+    }],
     productPrice: {
         type: Number,
         required: true
@@ -19,6 +22,9 @@ const productSchema = new Schema({
     inStock: {
         type: Number,
         required: true
+    },
+    image: {
+        type: String
     }
 })
 
