@@ -58,11 +58,11 @@ input OrderInput {
 }
 
 type Query {
-    products(category: ID, name: String): [Product]
+    categories: [Category]
+    category(_id: ID!): Category
     product(_id: ID!): Product
-    user: User
-    order(_id: ID!): Order
-    checkout(products: [ProductInput]): Checkout
+    user(_id: ID!): User
+    orders: [Order!]
 }
 
 type Mutation {

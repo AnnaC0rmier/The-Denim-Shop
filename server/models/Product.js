@@ -14,11 +14,6 @@ const productSchema = new Schema({
         type: Number,
         required: true
     },
-    productCategory: {
-        type: Schema.Types.ObjectId,
-        ref: 'Category',
-        required: true
-    },
     inStock: {
         type: Number,
         required: true
