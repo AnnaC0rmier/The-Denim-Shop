@@ -1,3 +1,4 @@
+
 const express = require('express');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
@@ -14,14 +15,12 @@ const server = new ApolloServer({
   resolvers,
 });
 
-
 const startApolloServer = async () => {
   await server.start();
 
   app.use(express.urlencoded({ extended: false }));
   app.use(express.json());
 
- 
   app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
   app.use('/graphql', expressMiddleware(server, {
@@ -43,6 +42,5 @@ const startApolloServer = async () => {
     });
   });
 };
-
 
 startApolloServer();
