@@ -69,6 +69,7 @@ db.once('open', async () => {
   console.log('Categories seeded');
 
   console.log('Products seeded');
+  
   const orders = await Order.insertMany([
     {
       totalPrice: 100,

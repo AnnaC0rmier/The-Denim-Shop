@@ -66,9 +66,9 @@ type Query {
 }
 
 type Mutation {
-    addOrder(products: [ID]!): Order
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    addToOrder(products: [ID]!): Order
 }
 
 

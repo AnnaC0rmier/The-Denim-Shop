@@ -15,17 +15,24 @@ const orderSchema = new Schema({
         ref: 'Product',
         required: true
     }]
+   
 });
 
-
 orderSchema.pre('save', async function(next) {
-   
-    this.totalPrice = this.products.reduce((total, product) => total + product.productPrice, 0);
+    try {
+       
+        this.totalPrice = this.products.reduce((total, product) => {
+           
+            return total + product.productPrice * product.quantity; 
+        }, 0);
 
-   
-    this.pointsRewarded = Math.ceil(this.totalPrice);
+      
+        this.pointsRewarded = Math.ceil(this.totalPrice);
 
-    next();
+        next();
+    } catch (error) {
+        next(error);
+    }
 });
 
 const Order = mongoose.model('Order', orderSchema);
