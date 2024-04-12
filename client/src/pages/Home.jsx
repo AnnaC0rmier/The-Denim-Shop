@@ -10,6 +10,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
+
 
 export default function Home() {
     return (
@@ -41,7 +43,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                                <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button>
+                               <Link to= '/category/6618a4fc6ed8e1dc8e4bc39d'> <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -59,7 +61,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                                <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button>
+                                <Link to ='/category/6618a4fc6ed8e1dc8e4bc39e'><Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>
