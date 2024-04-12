@@ -15,9 +15,11 @@ export default function Nav() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar sx={{ backgroundColor: 'black', display: 'flex', justifyContent: 'space-between' }}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, flexShrink: 1 }}>
-            DENIM SHOP
-          </Typography>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <Typography variant="h6" component="div" sx={{ flexGrow: 1, flexShrink: 1 }}>
+        DENIM SHOP
+      </Typography>
+    </Link>
           
           <Link to= '/category/6618ccb657114864e96a492e'><Button style={{ color: 'white', margint: 10 }}>MEN</Button></Link>
           <Link to ='/category/6618ccb657114864e96a492d'><Button style={{ color: 'white', margin: 10 }}>WOMEN</Button></Link>
