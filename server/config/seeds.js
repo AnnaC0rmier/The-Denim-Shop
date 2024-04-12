@@ -2,6 +2,7 @@ const db = require('./connection');
 const { User, Product, Category, Order } = require('../models');
 const cleanDB = require('./cleanDB');
 
+ 
 db.once('open', async () => {
   await cleanDB('Category', 'categories');
   await cleanDB('Product', 'products');
@@ -16,28 +17,28 @@ db.once('open', async () => {
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 70.99,
       inStock: 50,
-      image:'../../client/src/assets/img/women/flare.jpg'
+      image:'/women/flare.jpg'
     },
     {
       productName: 'Ripped Jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 94.55,
       inStock: 50,
-      image:'../../client/src/assets/img/women/ripped.jpg'
+      image:'/women/ripped.jpg'
     },
     {
       productName: 'Graphic Jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 124.99,
       inStock: 20,
-      image:'../../client/src/assets/img/women/graphic.jpg'
+      image:'/women/graphic.jpg'
     },
     {
       productName: 'lightwash jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 54.99,
       inStock: 50,
-      image:'../../client/src/assets/img/women/lightwash.jpg'
+      image:'/women/lightwash.jpg'
 
     },
     {
@@ -45,14 +46,14 @@ db.once('open', async () => {
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 54.99,
       inStock: 50,
-      image:'../../client/src/assets/img/men/skinny.jpg'
+      image:'/men/skinny.jpg'
     },
     {
       productName: 'Distressed Jean',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 84.99,
       inStock: 50,
-      image:'../../client/src/assets/img/men/distressed.jpg'
+      image:'/men/distressed.jpg'
 
     },
     {
@@ -60,14 +61,14 @@ db.once('open', async () => {
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 74.99,
       inStock: 50,
-      image:'../../client/src/assets/img/men/straight.jpg'
+      image:'/men/straight.jpg'
     },
     {
       productName: 'Loose Fit Jean',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 85.99,
       inStock: 50,
-      image:'../../client/src/assets/img/men/loose.jpg'
+      image:'/men/loose.jpg'
     }
   ]);
 

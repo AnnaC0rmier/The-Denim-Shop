@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import mainImg from '../assets/img/homePage/main.jpg';
+import mainImg from '../../public/images/homePage/main.jpg'
 import Grid from '@mui/material/Grid';
 import '../assets/css/main.css';
-import women from '../assets/img/homePage/women.jpg'
-import men from '../assets/img/homePage/men.jpg'
+import women from '../../public/images/homePage/women.jpg'
+import men from '../../public/images/homePage/men.jpg'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -43,7 +43,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                               <Link to= '/category/6618a4fc6ed8e1dc8e4bc39d'> <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button></Link>
+                               <Link to= '/category/6618b697d0a29164f7cdca1e'> <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -61,7 +61,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                                <Link to ='/category/6618a4fc6ed8e1dc8e4bc39e'><Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button></Link>
+                                <Link to ='/category/6618b697d0a29164f7cdca1f'><Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>
