@@ -11,10 +11,10 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function Nav() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar sx={{ backgroundColor: 'black', display: 'flex', justifyContent: 'space-between' }}>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, flexShrink: 1 }}>
-            THE DENIM SHOP
+            DENIM SHOP
           </Typography>
           
             <Button style={{ color: 'white', margint: 10 }}>MEN</Button>

@@ -15,49 +15,59 @@ db.once('open', async () => {
       productName: 'Flare Jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 70.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/women/flare.jpg'
     },
     {
       productName: 'Ripped Jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 94.55,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/women/ripped.jpg'
     },
     {
-      productName: 'Denim Jacket',
-      productSize: ['xs','sm', 'md', 'lg', 'xl', '2x', '3x'],
+      productName: 'Graphic Jean',
+      productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 124.99,
-      inStock: 20
+      inStock: 20,
+      image:'../../client/src/assets/img/women/graphic.jpg'
     },
     {
       productName: 'lightwash jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 54.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/women/lightwash.jpg'
+
     },
     {
       productName: 'Skinny Jean',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 54.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/men/skinny.jpg'
     },
     {
       productName: 'Distressed Jean',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 84.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/men/distressed.jpg'
+
     },
     {
       productName: 'Straight Leg',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 74.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/men/straight.jpg'
     },
     {
-      productName: 'Darkwash Jean',
+      productName: 'Loose Fit Jean',
       productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
       productPrice: 85.99,
-      inStock: 50
+      inStock: 50,
+      image:'../../client/src/assets/img/men/loose.jpg'
     }
   ]);
 
