@@ -20,6 +20,20 @@ db.once('open', async () => {
       image:'/women/flare.jpg'
     },
     {
+      productName: 'Ulra Dark Wash Jean',
+      productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
+      productPrice: 70.99,
+      inStock: 50,
+      image:'/women/dark.jpg'
+    },
+    {
+      productName: 'Wide Leg Jean',
+      productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
+      productPrice: 70.99,
+      inStock: 50,
+      image:'/women/wide.jpg'
+    },
+    {
       productName: 'Ripped Jean',
       productSize: ['0', '00', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24'],
       productPrice: 94.55,
@@ -69,12 +83,26 @@ db.once('open', async () => {
       productPrice: 85.99,
       inStock: 50,
       image:'/men/loose.jpg'
+    },
+    {
+      productName: 'Dark Wash Jean',
+      productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
+      productPrice: 74.99,
+      inStock: 50,
+      image:'/men/dark.jpg'
+    },
+    {
+      productName: 'Ultra Skinny Distressed Jean',
+      productSize: ['28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
+      productPrice: 74.99,
+      inStock: 50,
+      image:'/men/ultra.jpg'
     }
   ]);
 
   const categories = await Category.insertMany([
-    { name: 'Women', products: [products[0]._id, products[1]._id, products[2]._id, products[3]._id] },
-    { name: 'Men', products: [products[4]._id, products[5]._id, products[6]._id, products[7]._id] }
+    { name: 'Women', products: [products[0]._id, products[1]._id, products[2]._id, products[3]._id, products[4]._id, products[5]._id],  },
+    { name: 'Men', products: [products[6]._id, products[7]._id, products[8]._id, products[9]._id, products[10]._id, products[11]._id] }
   ]);
 
   console.log('Categories seeded');

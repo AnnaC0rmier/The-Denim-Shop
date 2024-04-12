@@ -12,7 +12,6 @@ const Category = () => {
 
   return (
     <div>
-      <h2>Category Page</h2>
       <ProductList categoryId={categoryId} /> 
     </div>
   );

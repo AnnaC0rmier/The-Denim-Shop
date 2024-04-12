@@ -19,8 +19,8 @@ export default function Nav() {
             DENIM SHOP
           </Typography>
           
-          <Link to= '/category/6618bed3366811b80e60420b'><Button style={{ color: 'white', margint: 10 }}>MEN</Button></Link>
-          <Link to ='/category/6618bed3366811b80e60420c'><Button style={{ color: 'white', margin: 10 }}>WOMEN</Button></Link>
+          <Link to= '/category/6618ccb657114864e96a492e'><Button style={{ color: 'white', margint: 10 }}>MEN</Button></Link>
+          <Link to ='/category/6618ccb657114864e96a492d'><Button style={{ color: 'white', margin: 10 }}>WOMEN</Button></Link>
             <FavoriteBorderIcon style={{ color: 'white', margin: 10 }} />
             <AccountCircleIcon style={{ color: 'white', margin: 10 }} />
             <ShoppingBagIcon style={{ color: 'white', margin: 10 }} />
