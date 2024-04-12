@@ -43,7 +43,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                               <Link to= '/category/6618b697d0a29164f7cdca1e'> <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button></Link>
+                               <Link to= '/category/6618bed3366811b80e60420b'> <Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP WOMEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -61,7 +61,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions sx={{ justifyContent: 'center' }}>
-                                <Link to ='/category/6618b697d0a29164f7cdca1f'><Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button></Link>
+                                <Link to ='/category/6618bed3366811b80e60420c'><Button size="small" style={{background:'black', color: '#d1cabd', fontSize:{xs: 10, m:16}}}>SHOP MEN</Button></Link>
                             </CardActions>
                         </Card>
                     </Grid>

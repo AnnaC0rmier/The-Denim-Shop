@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom';
+
 
 export default function Nav() {
   return (
@@ -17,8 +19,8 @@ export default function Nav() {
             DENIM SHOP
           </Typography>
           
-            <Button style={{ color: 'white', margint: 10 }}>MEN</Button>
-            <Button style={{ color: 'white', margin: 10 }}>WOMEN</Button>
+          <Link to= '/category/6618bed3366811b80e60420b'><Button style={{ color: 'white', margint: 10 }}>MEN</Button></Link>
+          <Link to ='/category/6618bed3366811b80e60420c'><Button style={{ color: 'white', margin: 10 }}>WOMEN</Button></Link>
             <FavoriteBorderIcon style={{ color: 'white', margin: 10 }} />
             <AccountCircleIcon style={{ color: 'white', margin: 10 }} />
             <ShoppingBagIcon style={{ color: 'white', margin: 10 }} />
