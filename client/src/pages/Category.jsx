@@ -8,7 +8,7 @@ import ProductList from '../components/StyleCard';
 const Category = () => {
   
   const { categoryId } = useParams();
-  console.log(categoryId)
+
 
   return (
     <div>

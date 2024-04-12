@@ -6,6 +6,7 @@ export const QUERY_CATEGORY = gql
       _id
       name
       products {
+        _id
         image
         productName
         productPrice
@@ -14,4 +15,16 @@ export const QUERY_CATEGORY = gql
     }
   }
   
+`
+
+export const QUERY_PRODUCT = gql
+`query Query($id: ID!) {
+  product(_id: $id) {
+    image
+    productName
+    productPrice
+    productSize
+    _id
+  }
+}
 `
